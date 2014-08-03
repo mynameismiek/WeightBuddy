@@ -5,6 +5,9 @@ using System.Linq;
 
 namespace WeightBuddy.Calculators
 {
+    /// <summary>
+    /// Weight calculator.
+    /// </summary>
     public static class WeightsCalculator
     {
         /// <summary>

@@ -5,9 +5,9 @@
 	<key>CFBundleDisplayName</key>
 	<string>WeightBuddy</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.your-company.WeightBuddy</string>
+	<string>self.michel.hope.WeightBuddy</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.0</string>
+	<string>1.1</string>
 	<key>CFBundleVersion</key>
 	<string>1.0</string>
 	<key>LSRequiresIPhoneOS</key>
@@ -25,8 +25,7 @@
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
-		<string>UIInterfaceOrientationLandscapeLeft</string>
-		<string>UIInterfaceOrientationLandscapeRight</string>
+		<string>UIInterfaceOrientationPortraitUpsideDown</string>
 	</array>
 </dict>
 </plist>

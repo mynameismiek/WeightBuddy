@@ -13,16 +13,10 @@ namespace WeightBuddy.ViewControllers
 	partial class MainViewController
 	{
 		[Outlet]
-		MonoTouch.UIKit.UISegmentedControl BarWeightSegmentedControl { get; set; }
-
-		[Outlet]
 		MonoTouch.UIKit.UITextField LiftWeightTextField { get; set; }
 
 		[Outlet]
 		MonoTouch.UIKit.UILabel WeightLabel1 { get; set; }
-
-		[Outlet]
-		MonoTouch.UIKit.UILabel WeightLabel2 { get; set; }
 
 		[Outlet]
 		MonoTouch.UIKit.UITableView WeightsTableView { get; set; }
@@ -37,16 +31,6 @@ namespace WeightBuddy.ViewControllers
 			if (WeightLabel1 != null) {
 				WeightLabel1.Dispose ();
 				WeightLabel1 = null;
-			}
-
-			if (WeightLabel2 != null) {
-				WeightLabel2.Dispose ();
-				WeightLabel2 = null;
-			}
-
-			if (BarWeightSegmentedControl != null) {
-				BarWeightSegmentedControl.Dispose ();
-				BarWeightSegmentedControl = null;
 			}
 
 			if (WeightsTableView != null) {

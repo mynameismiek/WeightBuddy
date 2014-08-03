@@ -11,7 +11,7 @@ namespace WeightBuddy.DataSources
     public class WeightsTableViewSource : UITableViewSource
     {
         private readonly NSString CELL_ID = new NSString("Weights Table Cell");
-        private readonly string CellFormat = "{0} {1} x {2}";
+        private readonly string CellFormat = "{0} x {1} {2}";
 
         /// <summary>
         /// Gets or sets the data.
@@ -37,7 +37,7 @@ namespace WeightBuddy.DataSources
             }
 
             var values = Data[indexPath.Row];
-            cell.TextLabel.Text = String.Format(CellFormat, values.Key, "lbs", values.Value); // TODO: make units come from settings
+            cell.TextLabel.Text = String.Format(CellFormat, values.Value, values.Key, NSUserDefaults.StandardUserDefaults.BoolForKey("Use Kilograms") ? "kg" : "lbs");
 
             return cell;
         }

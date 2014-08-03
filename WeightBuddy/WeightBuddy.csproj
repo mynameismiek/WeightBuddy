@@ -108,16 +108,19 @@
     <Compile Include="DataSources\WeightsTableViewSource.cs" />
     <Compile Include="Models\Weights.cs" />
     <Compile Include="Calculators\WeightsCalculator.cs" />
+    <Compile Include="ViewControllers\SettingsViewController.cs" />
+    <Compile Include="ViewControllers\SettingsViewController.designer.cs">
+      <DependentUpon>SettingsViewController.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="Views\MainView.xib" />
+    <InterfaceDefinition Include="Views\SettingsView.xib" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
     <Folder Include="Views\" />
     <Folder Include="ViewControllers\" />
-    <Folder Include="Extensions.xcassets\" />
-    <Folder Include="Extensions.xcassets\" />
     <Folder Include="Extensions\" />
     <Folder Include="DataSources\" />
     <Folder Include="Models\" />
